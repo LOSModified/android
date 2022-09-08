@@ -43,6 +43,8 @@
   <project path="device/lineage/sepolicy" name="LOSModified/android_device_lineage_sepolicy" />
   <project path="lineage-sdk" name="LOSModified/android_lineage-sdk" />
   <project path="vendor/lineage" name="LOSModified/android_vendor_lineage" />
+  <project path="vendor/gms" name="LOSModified/android_vendor_gms" clone-depth="1" remote="losmodified-gitlab" />
+  <project path="vendor/thirdparty" name="LOSModified/android_vendor_thirdparty" clone-depth="1" />
 
   <!-- CodeLinaro Additions Modified -->
   <project path="device/qcom/sepolicy-legacy-um" name="LOSModified/android_device_qcom_sepolicy" groups="qcom,sdm660" revision="lineage-20.0-legacy-um" />
