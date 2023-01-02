@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- AOSP Projects Modified -->
+  <project path="build/make" name="LOSModified/android_build" groups="pdk" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="LOSModified/android_build_soong" groups="pdk,tradefed" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="art" name="LOSModified/android_art" groups="pdk" />
+  <project path="bionic" name="LOSModified/android_bionic" groups="pdk" />
+  <project path="bootable/recovery" name="LOSModified/android_bootable_recovery" groups="pdk" />
+  <project path="development" name="LOSModified/android_development" groups="developers,pdk-cw-fs,pdk-fs" />
+  <project path="external/arm-optimized-routines" name="LOSModified/android_external_arm-optimized-routines" groups="pdk" />
+  <project path="external/freetype" name="LOSModified/android_external_freetype" groups="pdk" />
+  <project path="external/sqlite" name="LOSModified/android_external_sqlite" groups="pdk" />
+  <project path="external/zlib" name="LOSModified/android_external_zlib" groups="pdk" />
+  <project path="frameworks/av" name="LOSModified/android_frameworks_av" groups="pdk" />
+  <project path="frameworks/base" name="LOSModified/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/native" name="LOSModified/android_frameworks_native" groups="pdk" />
+  <project path="hardware/interfaces" name="LOSModified/android_hardware_interfaces" groups="pdk" />
+  <project path="packages/apps/Dialer" name="LOSModified/android_packages_apps_Dialer" groups="pdk-fs" />
+  <project path="packages/apps/DocumentsUI" name="LOSModified/android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/apps/Messaging" name="LOSModified/android_packages_apps_Messaging" groups="pdk-fs" />
+  <project path="packages/apps/Settings" name="LOSModified/android_packages_apps_Settings" groups="pdk-fs" />
+  <project path="packages/apps/Trebuchet" name="LOSModified/android_packages_apps_Trebuchet" groups="pdk-fs" />
+  <project path="packages/modules/Connectivity" name="LOSModified/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/modules/Permission" name="LOSModified/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/services/Telecomm" name="LOSModified/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
+  <project path="system/core" name="LOSModified/android_system_core" groups="pdk" />
+  <project path="system/sepolicy" name="LOSModified/android_system_sepolicy" groups="pdk" />
+  <project path="system/vold" name="LOSModified/android_system_vold" groups="pdk" />
+
+  <!-- LineageOS Additions Modified -->
+  <project path="android" name="LOSModified/android" />
+  <project path="device/lineage/sepolicy" name="LOSModified/android_device_lineage_sepolicy" />
+  <project path="lineage-sdk" name="LOSModified/android_lineage-sdk" />
+  <project path="vendor/lineage" name="LOSModified/android_vendor_lineage" />
+
+  <!-- CodeLinaro Additions Modified -->
+  <project path="device/qcom/sepolicy-legacy-um" name="LOSModified/android_device_qcom_sepolicy" groups="qcom,sdm660" revision="lineage-20.0-legacy-um" />
+  <project path="hardware/qcom-caf/sdm660/audio" name="LOSModified/android_hardware_qcom_audio" groups="qcom,sdm660" revision="lineage-20.0-caf-sdm660" />
+  <project path="hardware/qcom-caf/sdm660/display" name="LOSModified/android_hardware_qcom_display" groups="qcom" revision="lineage-20.0-caf-sdm660" />
+  <project path="hardware/qcom-caf/sdm660/media" name="LOSModified/android_hardware_qcom_media" groups="qcom,sdm660" revision="lineage-20.0-caf-sdm660" />
+  <project path="hardware/qcom-caf/thermal" name="LOSModified/android_hardware_qcom_thermal" groups="qcom,waipio-vendor" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="LOSModified/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" revision="lineage-20.0-legacy-um" />
+  <project path="vendor/qcom/opensource/interfaces" name="LOSModified/android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" />
+  <project path="vendor/qcom/opensource/usb" name="LOSModified/android_vendor_qcom_opensource_usb" groups="qcom,waipio-vendor" />
+
+</manifest>
