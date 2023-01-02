@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- AOSP Projects -->
+  <project path="build/make" name="LOSModified/android_build" groups="pdk" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="LOSModified/android_build_soong" groups="pdk,tradefed" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="art" name="LOSModified/android_art" groups="pdk" />
+  <project path="bionic" name="LOSModified/android_bionic" groups="pdk" />
+  <project path="development" name="LOSModified/android_development" groups="developers,pdk-cw-fs,pdk-fs" />
+  <project path="external/arm-optimized-routines" name="LOSModified/android_external_arm-optimized-routines" groups="pdk" />
+  <project path="external/sqlite" name="LOSModified/android_external_sqlite" groups="pdk" />
+  <project path="external/zlib" name="LOSModified/android_external_zlib" groups="pdk" />
+  <project path="frameworks/av" name="LOSModified/android_frameworks_av" groups="pdk" />
+  <project path="frameworks/base" name="LOSModified/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/native" name="LOSModified/android_frameworks_native" groups="pdk" />
+  <project path="packages/apps/Dialer" name="LOSModified/android_packages_apps_Dialer" groups="pdk-fs" />
+  <project path="packages/apps/DocumentsUI" name="LOSModified/android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/apps/Messaging" name="LOSModified/android_packages_apps_Messaging" groups="pdk-fs" />
+  <project path="packages/apps/Settings" name="LOSModified/android_packages_apps_Settings" groups="pdk-fs" />
+  <project path="packages/modules/Permission" name="LOSModified/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/services/Telecomm" name="LOSModified/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
+  <project path="platform_testing" name="LOSModified/android_platform_testing" groups="pdk-fs,pdk-cw-fs,cts" />
+  <project path="prebuilts/abi-dumps/vndk" name="LOSModified/android_prebuilts_abi-dumps_vndk" groups="pdk-fs" clone-depth="1" />
+  <project path="system/core" name="LOSModified/android_system_core" groups="pdk" />
+  <project path="system/sepolicy" name="LOSModified/android_system_sepolicy" groups="pdk" />
+  <project path="system/vold" name="LOSModified/android_system_vold" groups="pdk" />
+
+  <!-- LineageOS Mod additions -->
+  <project path="android" name="LOSModified/android" />
+  <project path="device/lineage/sepolicy" name="LOSModified/android_device_lineage_sepolicy" />
+  <project path="lineage-sdk" name="LOSModified/android_lineage-sdk" />
+  <project path="packages/apps/Trebuchet" name="LOSModified/android_packages_apps_Trebuchet" />
+  <project path="vendor/lineage" name="LOSModified/android_vendor_lineage" />
+</manifest>
